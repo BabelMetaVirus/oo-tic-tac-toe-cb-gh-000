@@ -17,14 +17,14 @@
 # move -              writes a move to the board
 # => index -          index of the space to make a move
 # => token -          symbol to place on the board, (default: "X")
-# 
+#
 # position_taken? -   tests to see if a position is occupied
 # => index -          index of the position to check
 # <= boolean -        true if the position is occupied, false otherwise
 #
 # valid_move? -       checks a position and determines if the move is valid_move
 # => index -          the space to check for validity
-# <= boolean -        true if the position is present on the game board and 
+# <= boolean -        true if the position is present on the game board and
 #                     not already filled, false otherwise
 # turn -              logical method to execute a turn of tic-tac-toe
 # 1) Asks the user to specify a position in the range 1-9.
@@ -33,14 +33,14 @@
 # 4) If the move is valid, make the move and display the board.
 # 5) If the move is invalid, ask for a new move until a valid move is received.
 #
-# turn_count -        Determine the number of turns that have been played by 
+# turn_count -        Determine the number of turns that have been played by
 #                     referencing the @board variable
 # <= integer          the number of turns that have been played
 #
 # current player -    Determines which player's turn it is
 # <= string           "X" or "O" as appropriate
 #
-# won? -              
+# won? -
 class TicTacToe
     WIN_COMBINATIONS = [  # row cominations
                         [0,1,2],
@@ -54,7 +54,7 @@ class TicTacToe
                         [0,4,8],
                         [2,4,6]]
     SEPARATOR = "-----------"
-  
+
     def initialize
       board = []
       9.times{board << " "}
