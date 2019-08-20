@@ -57,7 +57,11 @@
 #
 # winner - determine who the winner is
 # <= string           'X' or 'O' depending who the winner is
+#
 # play - executes the game loop and process
+# 1) Until the game is over, loop turns.
+# 2)  If the game hase been won, or the game is a draw, write a string to the 
+#     CLI reporting the outcome of the game.
 class TicTacToe
     WIN_COMBINATIONS = [  # row cominations
                         [0,1,2],
@@ -91,3 +95,4 @@ class TicTacToe
       return @board[index]
     end
 end
+
