@@ -12,7 +12,7 @@
 
 # input_to_index - convert input to a board spaces
 # => input -          user input as a string "1"-"9"
-# <= string           the string in the requested board space
+# <= integer          integer conversion of the input
 #
 # move -              writes a move to the board
 # => index -          index of the space to make a move
