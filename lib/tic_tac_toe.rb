@@ -94,4 +94,8 @@ class TicTacToe
       int index = input.to_i - 1
       return @board[index]
     end
+
+    def move(index, token)
+      board[index] = token
+    end
 end
