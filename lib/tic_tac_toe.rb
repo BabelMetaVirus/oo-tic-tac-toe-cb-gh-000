@@ -57,6 +57,7 @@
 #
 # winner - determine who the winner is
 # <= string           'X' or 'O' depending who the winner is
+# play - executes the game loop and process
 class TicTacToe
     WIN_COMBINATIONS = [  # row cominations
                         [0,1,2],
