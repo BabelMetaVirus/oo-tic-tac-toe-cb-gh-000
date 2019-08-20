@@ -93,7 +93,7 @@ class TicTacToe
     def input_to_index(input)
       int index = input.to_i
       index -= 1
-      return @board[index]
+      return index
     end
 
     def move(index, token)
