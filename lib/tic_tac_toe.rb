@@ -46,6 +46,17 @@
 #
 # full? - determine if the board has no open spaces
 # <= boolean          true if the board is completely filled, false otherwise
+#
+# draw? - determine if the game is drawn.
+# <= boolean          true if the board is full and no winning combination is
+#                     present, false otherwise.
+#
+# over? - determine if the game is over
+# <= boolean          true if the board contains a winning combination or if
+#                     the board is drawn, false otherwise
+#
+# winner - determine who the winner is
+# <= string           'X' or 'O' depending who the winner is
 class TicTacToe
     WIN_COMBINATIONS = [  # row cominations
                         [0,1,2],
