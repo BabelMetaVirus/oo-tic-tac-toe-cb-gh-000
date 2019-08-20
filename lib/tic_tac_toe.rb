@@ -45,7 +45,7 @@
 # <= nil              if no winning combination is present
 #
 # full? - determine if the board has no open spaces
-# <= boolean          true if the board is completely filled, false otherwise    
+# <= boolean          true if the board is completely filled, false otherwise
 class TicTacToe
     WIN_COMBINATIONS = [  # row cominations
                         [0,1,2],
@@ -65,7 +65,7 @@ class TicTacToe
       9.times{board << " "}
       @board = board
     end
-    
+
     def display_board
       puts " #{board[0]} | #{board[1]} | #{board[2]} "
       puts SEPARATOR
@@ -73,7 +73,7 @@ class TicTacToe
       puts SEPARATOR
       puts " #{board[6]} | #{board[7]} | #{board[8]} "
     end
-    
+
     def input_to_index(input)
       int index = input.to_i - 1
       return @board[index]
