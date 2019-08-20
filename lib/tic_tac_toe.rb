@@ -60,7 +60,7 @@
 #
 # play - executes the game loop and process
 # 1) Until the game is over, loop turns.
-# 2)  If the game hase been won, or the game is a draw, write a string to the 
+# 2)  If the game hase been won, or the game is a draw, write a string to the
 #     CLI reporting the outcome of the game.
 class TicTacToe
     WIN_COMBINATIONS = [  # row cominations
@@ -95,4 +95,3 @@ class TicTacToe
       return @board[index]
     end
 end
-
